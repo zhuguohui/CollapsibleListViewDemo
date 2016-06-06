@@ -1,5 +1,28 @@
 apply plugin: 'com.android.library'
 
+ext {
+    bintrayRepo = 'maven'
+    bintrayName = 'CollapsibleListView'
+
+    publishedGroupId = 'com.zgh.collapsiblelistview'
+    libraryName = 'CollapsibleListView'
+    artifact = 'collapsiblelistview'
+
+    libraryDescription = 'A CollapsibleListView for Android'
+
+    siteUrl = 'https://github.com/zhuguohui/CollapsibleListViewDemo'
+    gitUrl = 'https://github.com/zhuguohui/CollapsibleListViewDemo'
+
+    libraryVersion = '1.0.0'
+
+    developerId = 'zhuguohui'
+    developerName = 'zhuguohui'
+    developerEmail = '287718603@qq.com'
+
+    licenseName = 'The Apache Software License, Version 2.0'
+    licenseUrl = 'http://www.apache.org/licenses/LICENSE-2.0.txt'
+    allLicenses = ["Apache-2.0"]
+}
 android {
     compileSdkVersion 23
     buildToolsVersion "23.0.2"
@@ -23,3 +46,7 @@ dependencies {
     testCompile 'junit:junit:4.12'
     compile 'com.android.support:appcompat-v7:23.3.0'
 }
+
+apply from: 'https://raw.githubusercontent.com/nuuneoi/JCenter/master/installv1.gradle'
+apply from: 'https://raw.githubusercontent.com/nuuneoi/JCenter/master/bintrayv1.gradle'
+
