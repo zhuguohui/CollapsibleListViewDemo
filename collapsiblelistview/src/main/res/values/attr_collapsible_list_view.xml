@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="CollapsibleListView">
+        <attr name="CollapsibleTitle" format="string" />
+        <attr name="CollapsibleHight" format="dimension" />
+        <attr name="CollapsibleDuration" format="integer" />
+        <attr name="CollapsibleTitleColor" format="color" />
+        <attr name="CollapsibleContentColor" format="color" />
+        <attr name="CollapsibleCornerRadius" format="dimension" />
+        <attr name="CollapsibleTitleTextColor" format="color" />
+    </declare-styleable>
+</resources>

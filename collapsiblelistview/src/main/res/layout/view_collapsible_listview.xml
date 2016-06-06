@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_centerHorizontal="true"
+    android:id="@+id/ll_back"
+    android:background="@drawable/bg_content"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:background="@drawable/bg_heard"
+        android:drawablePadding="-30dp"
+        android:drawableRight="@drawable/ic_jiantou_down"
+        android:gravity="center"
+        android:paddingRight="20dp"
+        android:text="查找设备"
+        android:textColor="@android:color/white"
+        android:textSize="15sp" />
+
+    <ListView
+        android:fadeScrollbars="false"
+        android:id="@+id/list_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:scrollbarFadeDuration="0" />
+
+</LinearLayout>
