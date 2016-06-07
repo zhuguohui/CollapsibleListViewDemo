@@ -20,7 +20,7 @@ import android.widget.ListView;
 import android.widget.TextView;
 
 /**
- * Created by yuelin on 2016/6/3.
+ * Created by zhuguohui on 2016/6/3.
  */
 public class CollapsibleListView extends LinearLayout implements View.OnClickListener {
     TextView tv_title;
@@ -36,7 +36,6 @@ public class CollapsibleListView extends LinearLayout implements View.OnClickLis
     private static final int DEFAULT_DURATION = 500;//ms
     private static final String DEFAULT_TITLE = "标题";
     private static final int DEFAULT_TITLE_COLOR = Color.parseColor("#E14C60");
-    ;
     private static final int DEFAULT_CONTENT_COLOR = Color.parseColor("#C76C78");
     private static final int DEFAULT_TITLE_TEXT_COLOR = Color.WHITE;
     private static final int DEFAULT_CORNER_RADIUS = 10;
@@ -125,6 +124,10 @@ public class CollapsibleListView extends LinearLayout implements View.OnClickLis
     public void setAdapter(@NonNull BaseAdapter adapter) {
         mAdapter = adapter;
         listview.setAdapter(mAdapter);
+    }
+
+    public ListView getListview() {
+        return listview;
     }
 
 
